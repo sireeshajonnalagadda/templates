@@ -18,6 +18,7 @@ check "user has write permission to rvm gems" [ -w /usr/local/rvm/gems ]
 check "user has write permission to rvm gems default" [ -w /usr/local/rvm/gems/default ]
 check "user can install gems" gem install github-markup
 check "gem command works" gem --version
+check "user can install gems" gem install github-markup
 check "user can install gems" gem list | grep -q "bundler" 
 
 
