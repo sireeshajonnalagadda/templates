@@ -11,20 +11,20 @@
             "type": "string",
             "description": "Ruby version (use - trixie, -bookworm, -bullseye variants on local arm64/Apple Silicon):",
             "proposals": [
-                "4.0-trixie",
+                "4-trixie",
                 "3.4-trixie",
                 "3.3-trixie",
                 "3.2-trixie",				
-                "4.0-bookworm",
+                "4-bookworm",
                 "3.4-bookworm",
                 "3.3-bookworm",
                 "3.2-bookworm",
-                "4.0-bullseye",
+                "4-bullseye",
                 "3.4-bullseye",				
                 "3.3-bullseye",
                 "3.2-bullseye"
             ],
-			"default": "4.0-trixie"
+			"default": "4-trixie"
         }	
     },
     "platforms": ["Ruby"],
