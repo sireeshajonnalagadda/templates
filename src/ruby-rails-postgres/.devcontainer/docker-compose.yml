@@ -18,9 +18,7 @@ services:
     environment:
       DATABASE_URL: "postgresql://postgres:postgres@db:5432/postgres"
 
-    # IMPORTANT: Use proper Docker networking instead of network_mode to avoid namespace issues
-    # The previous network_mode: service:db caused container startup failures in automated environments
-    # This approach is more reliable and works consistently across different deployment scenarios
+   # Use proper Docker networking (not network_mode) to avoid namespace issues and ensure reliable container startup across environments
     depends_on:
       db:
         condition: service_healthy # Wait for PostgreSQL to be ready before starting the app
